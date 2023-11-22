@@ -6,11 +6,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #000;
+    background: #000000;
+    
 }
 
 
-.container {
+.first-section .container {
     position: relative;
     width: 400px;
     height: 100px;
@@ -19,29 +20,52 @@ body {
     
 }
 
-.container img {
+.first-section .container img {
     position: absolute;
     transition: 0.5s;
     align-items: center;
     justify-content: center;
 }
 
-.container:hover img:nth-of-type(4) {
+.first-section .container:hover img:nth-of-type(4) {
     transform: translate(160px, -160px);
     opacity: 1;
 }
 
-.container:hover img:nth-of-type(3) {
+.first-section .container:hover img:nth-of-type(3) {
     transform: translate(120px, -120px);
     opacity: 0.8;
 }
 
-.container:hover img:nth-of-type(2) {
+.first-section .container:hover img:nth-of-type(2) {
     transform: translate(80px, -80px);
     opacity: 0.6;
 }
 
-.container:hover img:nth-of-type(1) {
+.first-section .container:hover img:nth-of-type(1) {
     transform: translate(40px, -40px);
     opacity: 0.4;
+}
+
+
+.second-section .image{
+    perspective: 3000px;
+    width:70%;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d; ;
+}
+.second-section .img{
+    transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px,0px,70px);
+    transition: all .4s;
+    box-shadow: -80px 60px 15px 5px rgba(0,0,0,.2);
+    transform-style: preserve-3d;
+}
+
+.second-section:hover .img{
+    transform: rotateX(0deg) rotateZ(0deg) translate3d(0px,0px,0px) ;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,.2);
+    
 }
