@@ -15,7 +15,7 @@ body {
     position: relative;
     width: 400px;
     height: 100px;
-    margin-top: 350px;
+    margin-top: 400px;
     transform: rotate(-30deg) skew(25deg) scale(.8);
     
 }
